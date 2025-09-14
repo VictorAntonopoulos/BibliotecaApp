@@ -111,3 +111,22 @@ const firebaseConfig = {
 };
 
 ```
+5. **📲 Fluxo de Uso**
+- Criar conta ou fazer login  
+- Adicionar livro (título, autor, gênero, status)  
+- Gerenciar livros na Home:
+  - Editar  
+  - Excluir  
+  - Marcar como favorito  
+  - Alterar status de leitura  
+- Visualizar estatísticas no perfil:
+  - Total de livros  
+  - Favoritos  
+  - Lidos  
+
+6. **📌 Destaques do Código**
+- `bookService.ts` → CRUD no Firestore + funções de favoritos/status  
+- `AuthContext.tsx` → gerenciamento global de autenticação  
+- `AppNavigator.tsx` → navegação condicional (usuário logado / não logado)  
+- `HomeScreen.tsx` → busca, filtros, favoritos, status, exclusão com modal  
+- `ProfileScreen.tsx` → estatísticas do usuário + logout  
