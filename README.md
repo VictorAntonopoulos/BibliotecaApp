@@ -94,11 +94,11 @@ npx react-native run-android
 ```
 ## 4. 🔑 Configuração do Firebase
 
-- **Crie um projeto no Firebase Console  
-- **Ative Authentication → E-mail/Senha
+- Crie um projeto no Firebase Console  
+- Ative Authentication → E-mail/Senha
+- Crie o Firestore Database em modo de teste ou configure regras
 - Copie as credenciais do projeto e substitua em src/firebase/config.ts
   
-```
 ```text
 const firebaseConfig = {
   apiKey: "SUA_API_KEY",
