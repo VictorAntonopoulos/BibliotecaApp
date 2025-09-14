@@ -1,6 +1,6 @@
 import React, { useState } from "react";
 import { View, Alert, StyleSheet, ActivityIndicator } from "react-native";
-import BookForm from "../screens/BookForm"; // ajuste o caminho se precisar
+import BookForm from "../screens/BookForm"; 
 import { updateBook } from "../firebase/bookService";
 
 export default function EditBookScreen({ route, navigation }: any) {

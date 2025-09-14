@@ -11,7 +11,6 @@ import {
 } from "firebase/firestore";
 import { db } from "./config";
 
-// Tipagem para livro
 export interface Book {
   title: string;
   author: string;
@@ -23,7 +22,6 @@ export interface Book {
 
 const booksRef = collection(db, "books");
 
-// Criar livro
 export const addBook = async (book: Book, userId: string): Promise<void> => {
   await addDoc(booksRef, {
     ...book,
@@ -32,7 +30,7 @@ export const addBook = async (book: Book, userId: string): Promise<void> => {
   });
 };
 
-// Listar livros do usuário
+
 export const getBooks = async (
   userId: string
 ): Promise<(Book & { id: string })[]> => {
@@ -44,7 +42,7 @@ export const getBooks = async (
   }));
 };
 
-// Atualizar livro
+
 export const updateBook = async (
   id: string,
   data: Partial<Book>
@@ -53,13 +51,13 @@ export const updateBook = async (
   await updateDoc(ref, data);
 };
 
-// Excluir livro
+
 export const deleteBook = async (id: string): Promise<void> => {
   const ref = doc(db, "books", id);
   await deleteDoc(ref);
 };
 
-// Marcar/desmarcar favorito
+
 export const toggleFavorite = async (
   id: string,
   current: boolean
@@ -68,7 +66,7 @@ export const toggleFavorite = async (
   await updateDoc(ref, { favorite: !current });
 };
 
-// Atualizar status
+
 export const updateStatus = async (
   id: string,
   status: Book["status"]

@@ -22,13 +22,13 @@ import debounce from "lodash.debounce";
 export default function HomeScreen() {
   const { user } = useAuth();
   const [books, setBooks] = useState<any[]>([]);
-  const [loading, setLoading] = useState(true); // <-- adiciona loading
+  const [loading, setLoading] = useState(true); 
   const [search, setSearch] = useState("");
   const [filter, setFilter] = useState("Todos");
   const [showOnlyFavorites, setShowOnlyFavorites] = useState(false);
   const navigation: any = useNavigation();
 
-  // Modal de exclusão
+  
   const [modalVisible, setModalVisible] = useState(false);
   const [selectedBookId, setSelectedBookId] = useState<string | null>(null);
 
@@ -36,16 +36,16 @@ export default function HomeScreen() {
     fetchBooks();
   }, []);
 
-  // Função para buscar livros (do Firebase)
+  
   const fetchBooks = async () => {
     if (!user) return;
-    setLoading(true); // <-- inicia loading
+    setLoading(true); 
     const data = await getBooks(user.uid);
     setBooks(data);
-    setLoading(false); // <-- termina loading
+    setLoading(false); 
   };
 
-  // Debounce para busca (atualiza searchTerm com atraso)
+  
   const debouncedSearch = useCallback(
     debounce((text: string) => {
       setSearch(text);
@@ -53,12 +53,12 @@ export default function HomeScreen() {
     []
   );
 
-  // Chamado ao digitar na busca
+  
   const onChangeSearch = (text: string) => {
     debouncedSearch(text);
   };
 
-  // Filtragem combinada
+  
   const filteredBooks = books.filter((book) => {
     const matchSearch =
       book.title.toLowerCase().includes(search.toLowerCase()) ||
@@ -74,7 +74,7 @@ export default function HomeScreen() {
     return matchSearch && matchFilter && matchFavorite;
   });
 
-  // Funções para modal de exclusão
+  
   const openDeleteModal = (id: string) => {
     setSelectedBookId(id);
     setModalVisible(true);
@@ -93,7 +93,7 @@ export default function HomeScreen() {
     setSelectedBookId(null);
   };
 
-  // Função para status cíclico
+  
   const getNextStatus = (
     current: string
   ): "Quero ler" | "Lendo" | "Lido" => {
@@ -106,7 +106,7 @@ export default function HomeScreen() {
     return statusList[(index + 1) % statusList.length];
   };
 
-  // Se estiver carregando, mostra o ActivityIndicator centralizado
+  
   if (loading) {
     return (
       <View style={[styles.container, { justifyContent: "center", alignItems: "center" }]}>

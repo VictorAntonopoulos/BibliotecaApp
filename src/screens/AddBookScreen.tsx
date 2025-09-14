@@ -1,6 +1,6 @@
 import React, { useState } from "react";
 import { View, Alert, StyleSheet, ActivityIndicator } from "react-native";
-import BookForm from "../screens/BookForm"; // ajuste o caminho conforme seu projeto
+import BookForm from "../screens/BookForm"; 
 import { addBook } from "../firebase/bookService";
 import { useAuth } from "../hooks/AuthContext";
 

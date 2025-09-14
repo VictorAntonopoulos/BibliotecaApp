@@ -24,7 +24,7 @@ export default function LoginScreen({ navigation }: any) {
   };
 
   const handleLogin = async () => {
-    // Reset errors
+    
     setEmailError("");
     setPasswordError("");
     setFirebaseError("");
