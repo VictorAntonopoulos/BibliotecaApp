@@ -7,7 +7,7 @@
 Aplicativo mobile desenvolvido em **React Native CLI** com **TypeScript**, que permite gerenciar uma biblioteca pessoal de livros.  
 Permite cadastrar, editar, excluir livros, aplicar filtros, marcar favoritos e acompanhar estatísticas do usuário.
 
-Link do vídeo YouTube: https://youtube.com/shorts/ZhiXuU637SM?feature=share
+Link do vídeo YouTube: [https://youtube.com/shorts/ZhiXuU637SM?feature=share](https://youtu.be/xqIqrISfCIs)
 
 ---
 
