@@ -66,3 +66,19 @@ src
  ┣ screens        # Telas do app (Login, Register, ForgotPassword, Home, AddBook, EditBook, Profile)
  ┣ components     # Componentes reutilizáveis (ex: formulários)
  ┗ utils          # Funções auxiliares
+```
+## ⚙️ Como Rodar o Projeto (Android)
+
+### ✅ Pré-requisitos
+- **Node.js** instalado  
+- **JDK + Android Studio** (ou apenas SDK e emulador configurado)  
+- Configurar variáveis de ambiente `JAVA_HOME` e `ANDROID_HOME`  
+
+### Passos de Instalação
+
+1. **🔽 Clonar o Repositório**
+```bash
+git clone https://github.com/usuario/BibliotecaApp.git
+cd BibliotecaApp
+npm install
+
