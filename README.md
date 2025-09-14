@@ -99,7 +99,8 @@ npx react-native run-android
 - Crie o Firestore Database em modo de teste ou configure regras
 - Copie as credenciais do projeto e substitua em src/firebase/config.ts
   
-```text
+ ## Exemplo de config.ts:
+```json
 const firebaseConfig = {
   apiKey: "SUA_API_KEY",
   authDomain: "SEU_PROJETO.firebaseapp.com",
