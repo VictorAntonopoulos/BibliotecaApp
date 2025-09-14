@@ -92,13 +92,12 @@ npx react-native start
 npx react-native run-android
 
 ```
-4. **🔑 Configuração do Firebase**
-```bash
-Crie um projeto no Firebase Console
-Ative Authentication → E-mail/Senha
-Crie o Firestore Database em modo de teste ou configure regras
-Copie as credenciais do projeto e substitua em src/firebase/config.ts
+## 4. 🔑 Configuração do Firebase
 
+- **Crie um projeto no Firebase Console  
+- **Ative Authentication → E-mail/Senha
+- Copie as credenciais do projeto e substitua em src/firebase/config.ts
+  
 ```
 ```text
 const firebaseConfig = {
