@@ -43,7 +43,11 @@ Link do vídeo YouTube: [https://youtube.com/shorts/ZhiXuU637SM?feature=share](h
 ## 👨‍💻 Participantes
 
 - Victor Antonopoulos - RM 556313  
-- Leandro Correia - RM 556203  
+- Leandro Correia - RM 556203
+- Matheus Henrique - RM 558424
+- Cauan Aranega - RM 555466
+- Gustavo Lazzuri - RM 556772
+
 
 ---
 
