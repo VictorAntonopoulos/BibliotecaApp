@@ -81,4 +81,33 @@ src
 git clone https://github.com/usuario/BibliotecaApp.git
 cd BibliotecaApp
 npm install
+```
 
+2. **🗄️ Iniciar o Metro Bundler**
+```bash
+npx react-native start
+```
+3. **⚠️ Rodar no Emulador/Dispositivo Android**
+```bash
+npx react-native run-android
+
+```
+4. **🔑 Configuração do Firebase**
+```bash
+Crie um projeto no Firebase Console
+Ative Authentication → E-mail/Senha
+Crie o Firestore Database em modo de teste ou configure regras
+Copie as credenciais do projeto e substitua em src/firebase/config.ts
+
+```
+```text
+const firebaseConfig = {
+  apiKey: "SUA_API_KEY",
+  authDomain: "SEU_PROJETO.firebaseapp.com",
+  projectId: "SEU_PROJETO",
+  storageBucket: "SEU_PROJETO.appspot.com",
+  messagingSenderId: "NUMERO",
+  appId: "APP_ID"
+};
+
+```
